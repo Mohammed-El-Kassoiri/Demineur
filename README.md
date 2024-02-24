@@ -15,4 +15,7 @@ la vérification suivante :
                récursive.
 Le![1234](https://github.com/erreur404-7M7/Demineur/assets/155988288/a88b1dfc-6fee-489b-9b5c-82370b8cb06e)
 
+Les deux cas du jeu : 
 
+
+![Capture](https://github.com/erreur404-7M7/Demineur/assets/155988288/70097b75-308f-48f1-8f25-83665e3feb7e)
