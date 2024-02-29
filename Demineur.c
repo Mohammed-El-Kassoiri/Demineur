@@ -11,23 +11,6 @@ int grille[SIZE][SIZE];
 int Case_Revelees[SIZE][SIZE];
 int drapeau[SIZE][SIZE];
 
-void setup() {
-    printf(" *****     ******  **      **  *******  **      *  ******  *        *  ****\n"
-           " *     *   *       * *    * *     *     * *     *  *       *        *  *    *\n"
-           " *      *  *       *  *  *  *     *     *  *    *  *       *        *  *    *\n"
-           " *      *  ******  *   **   *     *     *   *   *  ******  *        *  ***\n"
-           " *      *  *       *        *     *     *    *  *  *       *        *  *  *\n"
-           " *     *   *       *        *     *     *     * *  *        *      *   *    *\n"
-           " *****     ******  *        *  *******  *      **  *******     **      *     *.MADE BY MOHAMMED EL KASSOIRI\n");
-    printf(" ENJOY WITH US!\n");
-    printf("\n");
-    printf("Taper pour commencer : ");
-    getch();
-    printf("\n\n");
-    Affiche_la_grille();
-    printf("\n");
-}
-
 void Initialise_grille() {
     int i, j;
     for (i = 0; i < SIZE; i++) {
@@ -136,6 +119,23 @@ int Verifie_Etat() {
         }
     }
     return 1;
+}
+
+void setup() {
+    printf(" *****     ******  **      **  *******  **      *  ******  *        *  ****\n"
+           " *     *   *       * *    * *     *     * *     *  *       *        *  *    *\n"
+           " *      *  *       *  *  *  *     *     *  *    *  *       *        *  *    *\n"
+           " *      *  ******  *   **   *     *     *   *   *  ******  *        *  ***\n"
+           " *      *  *       *        *     *     *    *  *  *       *        *  *  *\n"
+           " *     *   *       *        *     *     *     * *  *        *      *   *    *\n"
+           " *****     ******  *        *  *******  *      **  *******     **      *     *.MADE BY MOHAMMED EL KASSOIRI\n");
+    printf(" ENJOY WITH US!\n");
+    printf("\n");
+    printf("Taper pour commencer : ");
+    getch();
+    printf("\n\n");
+    Affiche_la_grille();
+    printf("\n");
 }
 
 int main() {
