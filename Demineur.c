@@ -76,10 +76,10 @@ void Drapeau(int x, int y) {
 
 void Affiche_la_grille(int X, int Y) {
     int i, j;
-    printf("      |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |\n");
-    printf("       ___________________________________________________________\n");
+    //printf("      |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |\n");
+    //printf("       ___________________________________________________________\n");
     for (i = 0; i < SIZE; i++) {
-        printf("| %d | |",i);
+        printf(" |");
         for (j = 0; j < SIZE; j++) {
             if (grille[i][j] == -1 && !(i == X && j == Y) && Etat == 1) {
                 printf("  m  |");
@@ -134,7 +134,7 @@ void setup() {
     printf("Taper pour commencer : ");
     getch();
     printf("\n\n");
-    Affiche_la_grille();
+    Affiche_la_grille(0,0);
     printf("\n");
 }
 
