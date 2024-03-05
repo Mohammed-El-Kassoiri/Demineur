@@ -76,10 +76,8 @@ void Drapeau(int x, int y) {
 
 void Affiche_la_grille(int X, int Y) {
     int i, j;
-    //printf("      |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |\n");
-    //printf("       ___________________________________________________________\n");
     for (i = 0; i < SIZE; i++) {
-        printf(" |");
+        printf("  |");
         for (j = 0; j < SIZE; j++) {
             if (grille[i][j] == -1 && !(i == X && j == Y) && Etat == 1) {
                 printf("  m  |");
@@ -105,7 +103,7 @@ void Affiche_la_grille(int X, int Y) {
             }
         }
         printf("\n");
-        printf("|---| |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|\n");
+        printf("  |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|\n");
     }
     printf("\n");
 }
@@ -121,7 +119,7 @@ int Verifie_Etat() {
     return 1;
 }
 
-void setup() {
+void hello() {
     printf(" *****     ******  **      **  *******  **      *  ******  *        *  ****\n"
            " *     *   *       * *    * *     *     * *     *  *       *        *  *    *\n"
            " *      *  *       *  *  *  *     *     *  *    *  *       *        *  *    *\n"
@@ -129,7 +127,6 @@ void setup() {
            " *      *  *       *        *     *     *    *  *  *       *        *  *  *\n"
            " *     *   *       *        *     *     *     * *  *        *      *   *    *\n"
            " *****     ******  *        *  *******  *      **  *******     **      *     *.MADE BY MOHAMMED EL KASSOIRI\n");
-    printf(" ENJOY WITH US!\n");
     printf("\n");
     printf("Taper pour commencer : ");
     getch();
@@ -139,7 +136,7 @@ void setup() {
 }
 
 int main() {
-    setup();
+    hello();
     srand(time(NULL));
     int difficulty;
     printf(" Choisissez la difficulte :\n"
